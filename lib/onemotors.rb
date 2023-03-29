@@ -18,9 +18,13 @@ module Onemotors
 
         return "#{source_name} - LTS" if product_name['LTS']
 
+        return "#{source_name} - LPS" if product_name['LPS']
+
         return "#{source_name} - LPG" if product_name['LPG']
 
         return "#{source_name} - LPP" if product_name['LPP']
+
+        return "#{source_name} - LPR" if product_name['LPR']
 
         source_name
       end
